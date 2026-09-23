@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Fixture Portal — Application, Page 2</title>
+</head>
+<body>
+  <h1>Apply — Meridian Field Services (Page 2)</h1>
+  <form id="applicationFormPage2">
+    <div>
+      <label for="startDate">What is your desired start date?</label>
+      <input id="startDate" name="startDate" type="text" />
+    </div>
+    <button id="submitBtn" type="button">Submit Application</button>
+    <p id="confirmation" hidden>Application submitted — confirmation #FIX-0001</p>
+  </form>
+  <script>
+    // No real backend — clicking Submit just reveals a confirmation message
+    // so `submit.ts`'s non-dry-run path has something observable to assert on.
+    document.getElementById("submitBtn").addEventListener("click", () => {
+      document.getElementById("confirmation").hidden = false;
+    });
+  </script>
+</body>
+</html>
