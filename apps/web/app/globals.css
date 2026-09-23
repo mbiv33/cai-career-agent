@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #fdfbf8;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f6f1ea;
+  --color-border: #e7e0d6;
+  --color-text: #221d17;
+  --color-text-muted: #6b6255;
+  --color-accent: #c2632b;
+  --color-accent-soft: #f3e0cf;
+  --color-accent-contrast: #ffffff;
+  --color-critical: #c1382c;
+  --color-critical-soft: #f7ded9;
+  --color-action: #c2632b;
+  --color-action-soft: #f3e0cf;
+  --color-update: #2f6f5e;
+  --color-update-soft: #dcede7;
+  --color-digest: #6b6255;
+  --color-digest-soft: #eeeae2;
+  --color-success: #2f7a4f;
+  --color-danger: #c1382c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #16130f;
+    --color-surface: #201b15;
+    --color-surface-muted: #29231b;
+    --color-border: #362f24;
+    --color-text: #f3ede3;
+    --color-text-muted: #b6ab9a;
+    --color-accent: #e2894f;
+    --color-accent-soft: #3c2b1c;
+    --color-accent-contrast: #16130f;
+    --color-critical: #e2685a;
+    --color-critical-soft: #3d211d;
+    --color-action: #e2894f;
+    --color-action-soft: #3c2b1c;
+    --color-update: #5fb79a;
+    --color-update-soft: #1f332c;
+    --color-digest: #b6ab9a;
+    --color-digest-soft: #29231b;
+    --color-success: #5fb79a;
+    --color-danger: #e2685a;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-border: var(--color-border);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-contrast: var(--color-accent-contrast);
+  --color-critical: var(--color-critical);
+  --color-critical-soft: var(--color-critical-soft);
+  --color-action: var(--color-action);
+  --color-action-soft: var(--color-action-soft);
+  --color-update: var(--color-update);
+  --color-update-soft: var(--color-update-soft);
+  --color-digest: var(--color-digest);
+  --color-digest-soft: var(--color-digest-soft);
+  --color-success: var(--color-success);
+  --color-danger: var(--color-danger);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  border-color: var(--color-border);
+}
