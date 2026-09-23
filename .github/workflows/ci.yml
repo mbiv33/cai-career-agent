@@ -32,6 +32,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @cai/browser exec playwright install --with-deps chromium
       - run: pnpm db:migrate
       - run: pnpm db:seed
       - run: pnpm typecheck
