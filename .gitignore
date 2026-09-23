@@ -10,3 +10,4 @@ dist/
 coverage/
 drizzle/meta/_journal.json.bak
 browser-profiles/
+*.tsbuildinfo
