@@ -8,7 +8,7 @@
  * against a non-local database unless SEED_ALLOW_REMOTE=1).
  */
 import { createHash } from "node:crypto";
-import { createDb } from "./index.js";
+import { createDb, schema } from "./index.js";
 import {
   agentActions,
   applications,
@@ -37,14 +37,24 @@ function dedupeKey(company: string, title: string, location: string) {
 
 async function main() {
   // Wipe in dependency order (dev fixture reset).
+  await db.delete(schema.outcomes);
+  await db.delete(schema.strategyProposals);
+  await db.delete(schema.interviews);
+  await db.delete(schema.communications);
+  await db.delete(schema.contacts);
+  await db.delete(schema.applicationAnswers);
   await db.delete(escalations);
   await db.delete(tasks);
   await db.delete(jobEvaluations);
   await db.delete(applications);
+  await db.delete(schema.documents);
+  await db.delete(schema.jobSnapshots);
   await db.delete(jobs);
   await db.delete(agentActions);
   await db.delete(auditEvents);
+  await db.delete(schema.portalCredentials);
   await db.delete(searchStrategies);
+  await db.delete(schema.careerGoals);
   await db.delete(preferences);
   await db.delete(candidateFacts);
   await db.delete(candidateProfiles);
@@ -199,7 +209,7 @@ async function main() {
     })
     .returning();
 
-  await db.insert(escalations).values({
+  const [esc] = await db.insert(escalations).values({
     candidateId,
     applicationId: app!.id,
     jobId: applying!.id,
@@ -210,7 +220,7 @@ async function main() {
     requiredInput: "Confirm range or provide another answer.",
     consequenceOfNoAction: "Application remains incomplete; posting may close.",
     resumeImmediately: true,
-  });
+  }).returning();
 
   await db.insert(tasks).values({
     candidateId,
@@ -234,6 +244,36 @@ async function main() {
       action: "Rejected XYZ Office Coordinator",
       reason: "Predominantly desk-based; conflicts with confirmed work-style preference.",
       policyReference: "work_environment_preference",
+    },
+    {
+      actor: "application",
+      eventType: "escalation.created",
+      entityType: "escalation",
+      entityId: esc!.id,
+      action: "Escalated: Employer asks for desired compensation and no approved range exists.",
+      reason: "Confirm range or provide another answer.",
+    },
+  ]);
+
+  // Fixture agent activity so Home's "current agent activity" has data (PRD §4).
+  await db.insert(agentActions).values([
+    {
+      agent: "discovery",
+      actionType: "stage.completed",
+      authority: "AUTO_REPORT",
+      entityType: "job",
+      entityId: qualified!.id,
+      summary: "Discovery run: 3 postings ingested, 0 duplicates",
+      runId: "run-fixture-0900",
+    },
+    {
+      agent: "application",
+      actionType: "application.paused",
+      authority: "AUTO_REPORT",
+      entityType: "application",
+      entityId: app!.id,
+      summary: "Paused Northline application pending compensation answer",
+      runId: "run-fixture-0900",
     },
   ]);
 
