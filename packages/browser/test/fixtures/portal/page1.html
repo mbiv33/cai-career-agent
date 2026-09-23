@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Fixture Portal — Application, Page 1</title>
+</head>
+<body>
+  <h1>Apply — Meridian Field Services</h1>
+  <form id="applicationForm">
+    <div>
+      <label for="fullName">Full Name</label>
+      <input id="fullName" name="fullName" type="text" required />
+    </div>
+    <div>
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" required />
+    </div>
+    <div>
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="tel" />
+    </div>
+    <div>
+      <label for="workAuthorization">Are you legally authorized to work in the United States?</label>
+      <select id="workAuthorization" name="workAuthorization" required>
+        <option value="">Select one</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div>
+      <label for="compensation">What are your compensation expectations?</label>
+      <input id="compensation" name="compensation" type="text" />
+    </div>
+    <div>
+      <label for="resume">Upload Resume</label>
+      <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,.txt" />
+    </div>
+    <button id="continueBtn" type="button" onclick="window.location.href = 'page2.html'">Continue</button>
+  </form>
+</body>
+</html>

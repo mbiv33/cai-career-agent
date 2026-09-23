@@ -1,0 +1,7 @@
+Cai — Fixture Résumé
+
+Education: B.S. Kinesiology, State University, 2024
+Athletics: NCAA Track & Field, 4 years
+
+This is a placeholder résumé file used only by the @cai/browser integration
+test to exercise the file-upload path of the form filler. Not a real résumé.
