@@ -1,0 +1,28 @@
+{
+  "source": "job_aggregator",
+  "sourceUrl": "https://jobs.example.com/postings/meridian-field-services-operations-trainee-crosspost",
+  "externalJobId": "AGG-99201",
+  "company": "Meridian Field Services",
+  "title": "Operations Trainee",
+  "location": "Riverside, TX",
+  "compensationMin": 56000,
+  "compensationMax": 61000,
+  "employmentType": "full_time",
+  "schedule": "day_shift",
+  "travel": "local, company vehicle provided",
+  "workEnvironment": "field",
+  "responsibilities": [
+    "Same role as posted directly on the employer's career site — cross-posted to this aggregator by a third party."
+  ],
+  "minimumRequirements": [
+    "Bachelor's degree or equivalent field experience",
+    "Valid driver's license"
+  ],
+  "preferredRequirements": [],
+  "physicalRequirements": [
+    "Able to lift up to 40 lbs"
+  ],
+  "careerPath": "Operations Trainee -> Field Supervisor -> Operations Manager",
+  "applicationUrl": "https://jobs.example.com/postings/meridian-field-services-operations-trainee-crosspost/apply",
+  "postingDate": "2026-09-09"
+}

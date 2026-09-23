@@ -1,0 +1,33 @@
+{
+  "source": "staffing_firm",
+  "sourceUrl": "https://brightpathstaffing.example.com/openings/administrative-assistant",
+  "externalJobId": "BPS-1190",
+  "company": "BrightPath Staffing",
+  "title": "Administrative Assistant",
+  "location": "Ames, IA",
+  "compensationMin": 34000,
+  "compensationMax": 38000,
+  "employmentType": "full_time",
+  "schedule": "day_shift",
+  "travel": "none",
+  "workEnvironment": "desk",
+  "responsibilities": [
+    "Answer phones and greet visitors",
+    "Manage calendars and schedule meetings",
+    "Prepare correspondence and file documents",
+    "Order office supplies"
+  ],
+  "minimumRequirements": [
+    "High school diploma or equivalent",
+    "Proficiency with standard office software"
+  ],
+  "preferredRequirements": [
+    "1+ years of office administration experience"
+  ],
+  "physicalRequirements": [
+    "Able to sit at a desk for extended periods"
+  ],
+  "careerPath": "Administrative Assistant -> Office Manager",
+  "applicationUrl": "https://brightpathstaffing.example.com/openings/administrative-assistant/apply",
+  "postingDate": "2026-09-02"
+}
