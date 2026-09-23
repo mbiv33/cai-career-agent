@@ -8,6 +8,22 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: cai
+          POSTGRES_PASSWORD: cai_dev
+          POSTGRES_DB: cai_career
+        ports:
+          - 5433:5432
+        options: >-
+          --health-cmd "pg_isready -U cai -d cai_career"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://cai:cai_dev@localhost:5433/cai_career
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -16,6 +32,8 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm db:migrate
+      - run: pnpm db:seed
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
