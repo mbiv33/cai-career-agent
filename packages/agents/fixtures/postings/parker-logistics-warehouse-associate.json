@@ -1,0 +1,35 @@
+{
+  "source": "employer_career_site",
+  "sourceUrl": "https://parkerlogistics.example.com/jobs/warehouse-operations-associate",
+  "externalJobId": "PLG-4471",
+  "company": "Parker Logistics Group",
+  "title": "Warehouse Operations Associate",
+  "location": "Denton, TX",
+  "compensationMin": 52000,
+  "compensationMax": 58000,
+  "employmentType": "full_time",
+  "schedule": "rotating_shift",
+  "travel": "none",
+  "workEnvironment": "field",
+  "responsibilities": [
+    "Receive, inspect, and stage inbound freight",
+    "Operate powered material-handling equipment (training provided)",
+    "Maintain accurate inventory counts",
+    "Support cross-dock and outbound loading operations"
+  ],
+  "minimumRequirements": [
+    "High school diploma or equivalent",
+    "Able to work rotating shifts including some weekends"
+  ],
+  "preferredRequirements": [
+    "Forklift certification or willingness to certify",
+    "Prior warehouse, logistics, or athletics team experience"
+  ],
+  "physicalRequirements": [
+    "Able to lift up to 50 lbs regularly",
+    "Able to stand for full shift"
+  ],
+  "careerPath": "Warehouse Associate -> Shift Lead -> Warehouse Supervisor",
+  "applicationUrl": "https://parkerlogistics.example.com/jobs/warehouse-operations-associate/apply",
+  "postingDate": "2026-09-05"
+}

@@ -1,0 +1,35 @@
+{
+  "source": "job_aggregator",
+  "sourceUrl": "https://jobs.example.com/postings/crestview-logistics-coordinator",
+  "externalJobId": "CSV-8823",
+  "company": "Crestview Supply Co",
+  "title": "Logistics Coordinator",
+  "location": "Ames, IA",
+  "compensationMin": 60000,
+  "compensationMax": 67000,
+  "employmentType": "full_time",
+  "schedule": "day_shift",
+  "travel": "occasional regional travel (~10%)",
+  "workEnvironment": "field",
+  "responsibilities": [
+    "Coordinate outbound shipment scheduling with carriers",
+    "Walk the distribution floor to verify load accuracy",
+    "Troubleshoot delivery exceptions with drivers on site",
+    "Maintain relationships with regional carrier partners"
+  ],
+  "minimumRequirements": [
+    "Bachelor's degree in a related field or equivalent experience",
+    "1+ years in logistics, operations, or a related field"
+  ],
+  "preferredRequirements": [
+    "Experience with routing or fleet-management software",
+    "Team-sport or military background valued for coordination skills"
+  ],
+  "physicalRequirements": [
+    "Able to walk distribution floor for extended periods",
+    "Able to lift up to 30 lbs occasionally"
+  ],
+  "careerPath": "Logistics Coordinator -> Senior Coordinator -> Logistics Manager",
+  "applicationUrl": "https://jobs.example.com/postings/crestview-logistics-coordinator/apply",
+  "postingDate": "2026-09-12"
+}

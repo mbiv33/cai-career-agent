@@ -1,0 +1,33 @@
+{
+  "source": "employer_career_site",
+  "sourceUrl": "https://vantageretail.example.com/careers/store-operations-trainee",
+  "externalJobId": "VRG-3305",
+  "company": "Vantage Retail Group",
+  "title": "Store Operations Trainee",
+  "location": "Plano, TX",
+  "compensationMin": 55000,
+  "compensationMax": 60000,
+  "employmentType": "full_time",
+  "schedule": "day_shift",
+  "travel": "none",
+  "workEnvironment": "desk",
+  "responsibilities": [
+    "Review store performance reports from a back-office workstation",
+    "Prepare merchandising and staffing recommendations for store managers",
+    "Coordinate with corporate buying and planning teams by phone/email",
+    "Rotate through short store visits during the first 90 days only"
+  ],
+  "minimumRequirements": [
+    "Bachelor's degree in business or a related field",
+    "Strong spreadsheet and reporting skills"
+  ],
+  "preferredRequirements": [
+    "Retail management trainee program experience"
+  ],
+  "physicalRequirements": [
+    "Able to sit at a workstation for the majority of each shift"
+  ],
+  "careerPath": "Store Operations Trainee -> Regional Analyst -> Regional Operations Manager",
+  "applicationUrl": "https://vantageretail.example.com/careers/store-operations-trainee/apply",
+  "postingDate": "2026-09-14"
+}

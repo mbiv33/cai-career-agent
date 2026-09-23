@@ -1,0 +1,36 @@
+{
+  "source": "job_aggregator",
+  "sourceUrl": "https://jobs.example.com/postings/sable-industrial-field-technician-trainee",
+  "externalJobId": "SBL-7742",
+  "company": "Sable Industrial",
+  "title": "Field Technician Trainee",
+  "location": "Waco, TX",
+  "compensationMin": 59000,
+  "compensationMax": 64000,
+  "employmentType": "full_time",
+  "schedule": "day_shift, occasional on-call",
+  "travel": "regional, company vehicle provided",
+  "workEnvironment": "field",
+  "responsibilities": [
+    "Assist senior technicians with on-site equipment installs and repairs",
+    "Complete a structured 6-month field-technician certification track",
+    "Log service visits and parts usage in the field service app",
+    "Represent the company professionally at customer sites"
+  ],
+  "minimumRequirements": [
+    "High school diploma or equivalent; technical coursework a plus",
+    "Valid driver's license and clean driving record",
+    "Willingness to work outdoors and travel regionally"
+  ],
+  "preferredRequirements": [
+    "Mechanical aptitude or hands-on trade/athletics background",
+    "Prior customer-facing field work"
+  ],
+  "physicalRequirements": [
+    "Able to lift up to 50 lbs",
+    "Able to climb, kneel, and work in varied outdoor conditions"
+  ],
+  "careerPath": "Field Technician Trainee -> Field Technician -> Senior Field Technician",
+  "applicationUrl": "https://jobs.example.com/postings/sable-industrial-field-technician-trainee/apply",
+  "postingDate": "2026-09-11"
+}
